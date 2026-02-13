@@ -1,0 +1,516 @@
+{
+    "contracts": {
+        "c:/Users/1020053/Documents/MEBlockchain/SolidityAvanzado/accessControl.sol": {
+            "VulnerableAccessControl": {
+                "abi": [
+                    {
+                        "inputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "constructor"
+                    },
+                    {
+                        "inputs": [],
+                        "name": "getSecretNumber",
+                        "outputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "",
+                                "type": "uint256"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [],
+                        "name": "owner",
+                        "outputs": [
+                            {
+                                "internalType": "address",
+                                "name": "",
+                                "type": "address"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "_secretNumber",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "setSecretNumber",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    }
+                ],
+                "devdoc": {
+                    "kind": "dev",
+                    "methods": {},
+                    "version": 1
+                },
+                "evm": {
+                    "bytecode": {
+                        "functionDebugData": {},
+                        "generatedSources": [],
+                        "linkReferences": {},
+                        "object": "60808060405234602557600180546001600160a01b0319163317905560c69081602a8239f35b5f80fdfe60808060405260043610156011575f80fd5b5f3560e01c90816352ee5a5514607a57816384c1d6391460635750638da5cb5b146039575f80fd5b34605f575f366003190112605f576001546040516001600160a01b039091168152602090f35b5f80fd5b34605f575f366003190112605f576020905f548152f35b34605f576020366003190112605f576004355f5500fea26469706673582212202c01361cfec8ebae6c2e9e80665affd723410e3cdd4bb5bace0faba5c63e03f464736f6c63430008210033",
+                        "opcodes": "PUSH1 0x80 DUP1 PUSH1 0x40 MSTORE CALLVALUE PUSH1 0x25 JUMPI PUSH1 0x1 DUP1 SLOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB NOT AND CALLER OR SWAP1 SSTORE PUSH1 0xC6 SWAP1 DUP2 PUSH1 0x2A DUP3 CODECOPY RETURN JUMPDEST PUSH0 DUP1 REVERT INVALID PUSH1 0x80 DUP1 PUSH1 0x40 MSTORE PUSH1 0x4 CALLDATASIZE LT ISZERO PUSH1 0x11 JUMPI PUSH0 DUP1 REVERT JUMPDEST PUSH0 CALLDATALOAD PUSH1 0xE0 SHR SWAP1 DUP2 PUSH4 0x52EE5A55 EQ PUSH1 0x7A JUMPI DUP2 PUSH4 0x84C1D639 EQ PUSH1 0x63 JUMPI POP PUSH4 0x8DA5CB5B EQ PUSH1 0x39 JUMPI PUSH0 DUP1 REVERT JUMPDEST CALLVALUE PUSH1 0x5F JUMPI PUSH0 CALLDATASIZE PUSH1 0x3 NOT ADD SLT PUSH1 0x5F JUMPI PUSH1 0x1 SLOAD PUSH1 0x40 MLOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB SWAP1 SWAP2 AND DUP2 MSTORE PUSH1 0x20 SWAP1 RETURN JUMPDEST PUSH0 DUP1 REVERT JUMPDEST CALLVALUE PUSH1 0x5F JUMPI PUSH0 CALLDATASIZE PUSH1 0x3 NOT ADD SLT PUSH1 0x5F JUMPI PUSH1 0x20 SWAP1 PUSH0 SLOAD DUP2 MSTORE RETURN JUMPDEST CALLVALUE PUSH1 0x5F JUMPI PUSH1 0x20 CALLDATASIZE PUSH1 0x3 NOT ADD SLT PUSH1 0x5F JUMPI PUSH1 0x4 CALLDATALOAD PUSH0 SSTORE STOP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0x2C ADD CALLDATASIZE SHR INVALID 0xC8 0xEB 0xAE PUSH13 0x2E9E80665AFFD723410E3CDD4B 0xB5 0xBA 0xCE 0xF 0xAB 0xA5 0xC6 RETURNDATACOPY SUB DELEGATECALL PUSH5 0x736F6C6343 STOP ADDMOD 0x21 STOP CALLER ",
+                        "sourceMap": "60:416:0:-:0;;;;;;;;;;-1:-1:-1;;;;;;60:416:0;197:10;60:416;;;;;;;;;;;;;"
+                    },
+                    "deployedBytecode": {
+                        "functionDebugData": {},
+                        "generatedSources": [],
+                        "immutableReferences": {},
+                        "linkReferences": {},
+                        "object": "60808060405260043610156011575f80fd5b5f3560e01c90816352ee5a5514607a57816384c1d6391460635750638da5cb5b146039575f80fd5b34605f575f366003190112605f576001546040516001600160a01b039091168152602090f35b5f80fd5b34605f575f366003190112605f576020905f548152f35b34605f576020366003190112605f576004355f5500fea26469706673582212202c01361cfec8ebae6c2e9e80665affd723410e3cdd4bb5bace0faba5c63e03f464736f6c63430008210033",
+                        "opcodes": "PUSH1 0x80 DUP1 PUSH1 0x40 MSTORE PUSH1 0x4 CALLDATASIZE LT ISZERO PUSH1 0x11 JUMPI PUSH0 DUP1 REVERT JUMPDEST PUSH0 CALLDATALOAD PUSH1 0xE0 SHR SWAP1 DUP2 PUSH4 0x52EE5A55 EQ PUSH1 0x7A JUMPI DUP2 PUSH4 0x84C1D639 EQ PUSH1 0x63 JUMPI POP PUSH4 0x8DA5CB5B EQ PUSH1 0x39 JUMPI PUSH0 DUP1 REVERT JUMPDEST CALLVALUE PUSH1 0x5F JUMPI PUSH0 CALLDATASIZE PUSH1 0x3 NOT ADD SLT PUSH1 0x5F JUMPI PUSH1 0x1 SLOAD PUSH1 0x40 MLOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB SWAP1 SWAP2 AND DUP2 MSTORE PUSH1 0x20 SWAP1 RETURN JUMPDEST PUSH0 DUP1 REVERT JUMPDEST CALLVALUE PUSH1 0x5F JUMPI PUSH0 CALLDATASIZE PUSH1 0x3 NOT ADD SLT PUSH1 0x5F JUMPI PUSH1 0x20 SWAP1 PUSH0 SLOAD DUP2 MSTORE RETURN JUMPDEST CALLVALUE PUSH1 0x5F JUMPI PUSH1 0x20 CALLDATASIZE PUSH1 0x3 NOT ADD SLT PUSH1 0x5F JUMPI PUSH1 0x4 CALLDATALOAD PUSH0 SSTORE STOP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0x2C ADD CALLDATASIZE SHR INVALID 0xC8 0xEB 0xAE PUSH13 0x2E9E80665AFFD723410E3CDD4B 0xB5 0xBA 0xCE 0xF 0xAB 0xA5 0xC6 RETURNDATACOPY SUB DELEGATECALL PUSH5 0x736F6C6343 STOP ADDMOD 0x21 STOP CALLER ",
+                        "sourceMap": "60:416:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;60:416:0;;;;;;;;-1:-1:-1;;;;;60:416:0;;;;;;;;;;;;;;;;;;-1:-1:-1;;60:416:0;;;;;;;;;;;;;;;;;-1:-1:-1;;60:416:0;;;;;;;;"
+                    },
+                    "gasEstimates": {
+                        "creation": {
+                            "codeDepositCost": "39600",
+                            "executionCost": "24334",
+                            "totalCost": "63934"
+                        },
+                        "external": {
+                            "getSecretNumber()": "2269",
+                            "owner()": "2321",
+                            "setSecretNumber(uint256)": "22236"
+                        }
+                    },
+                    "methodIdentifiers": {
+                        "getSecretNumber()": "84c1d639",
+                        "owner()": "8da5cb5b",
+                        "setSecretNumber(uint256)": "52ee5a55"
+                    }
+                },
+                "metadata": "{\"compiler\":{\"version\":\"0.8.33+commit.64118f21\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"getSecretNumber\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_secretNumber\",\"type\":\"uint256\"}],\"name\":\"setSecretNumber\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"c:/Users/1020053/Documents/MEBlockchain/SolidityAvanzado/accessControl.sol\":\"VulnerableAccessControl\"},\"evmVersion\":\"osaka\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[],\"viaIR\":true},\"sources\":{\"c:/Users/1020053/Documents/MEBlockchain/SolidityAvanzado/accessControl.sol\":{\"keccak256\":\"0xc1398c8c3bd61c8096dfe090403ae3b442ee6aaa7ddd2043a545fabcb607a68f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://799f6e94b8c15304d560dcc243391f77fd442e5d81fc5d5a4fe06d1bae55828b\",\"dweb:/ipfs/QmappJHY8YrduDqPWdfKvF7N1dYsQJwTF2cxqpMXWqWJHZ\"]}},\"version\":1}",
+                "storageLayout": {
+                    "storage": [
+                        {
+                            "astId": 3,
+                            "contract": "c:/Users/1020053/Documents/MEBlockchain/SolidityAvanzado/accessControl.sol:VulnerableAccessControl",
+                            "label": "secretNumber",
+                            "offset": 0,
+                            "slot": "0",
+                            "type": "t_uint256"
+                        },
+                        {
+                            "astId": 5,
+                            "contract": "c:/Users/1020053/Documents/MEBlockchain/SolidityAvanzado/accessControl.sol:VulnerableAccessControl",
+                            "label": "owner",
+                            "offset": 0,
+                            "slot": "1",
+                            "type": "t_address"
+                        }
+                    ],
+                    "types": {
+                        "t_address": {
+                            "encoding": "inplace",
+                            "label": "address",
+                            "numberOfBytes": "20"
+                        },
+                        "t_uint256": {
+                            "encoding": "inplace",
+                            "label": "uint256",
+                            "numberOfBytes": "32"
+                        }
+                    }
+                },
+                "userdoc": {
+                    "kind": "user",
+                    "methods": {},
+                    "version": 1
+                }
+            }
+        }
+    },
+    "sources": {
+        "c:/Users/1020053/Documents/MEBlockchain/SolidityAvanzado/accessControl.sol": {
+            "ast": {
+                "absolutePath": "c:/Users/1020053/Documents/MEBlockchain/SolidityAvanzado/accessControl.sol",
+                "exportedSymbols": {
+                    "VulnerableAccessControl": [
+                        33
+                    ]
+                },
+                "id": 34,
+                "license": "MIT",
+                "nodeType": "SourceUnit",
+                "nodes": [
+                    {
+                        "id": 1,
+                        "literals": [
+                            "solidity",
+                            "^",
+                            "0.8",
+                            ".0"
+                        ],
+                        "nodeType": "PragmaDirective",
+                        "src": "33:23:0"
+                    },
+                    {
+                        "abstract": false,
+                        "baseContracts": [],
+                        "canonicalName": "VulnerableAccessControl",
+                        "contractDependencies": [],
+                        "contractKind": "contract",
+                        "fullyImplemented": true,
+                        "id": 33,
+                        "linearizedBaseContracts": [
+                            33
+                        ],
+                        "name": "VulnerableAccessControl",
+                        "nameLocation": "69:23:0",
+                        "nodeType": "ContractDefinition",
+                        "nodes": [
+                            {
+                                "constant": false,
+                                "id": 3,
+                                "mutability": "mutable",
+                                "name": "secretNumber",
+                                "nameLocation": "116:12:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 33,
+                                "src": "100:28:0",
+                                "stateVariable": true,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                },
+                                "typeName": {
+                                    "id": 2,
+                                    "name": "uint256",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "100:7:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    }
+                                },
+                                "visibility": "private"
+                            },
+                            {
+                                "constant": false,
+                                "functionSelector": "8da5cb5b",
+                                "id": 5,
+                                "mutability": "mutable",
+                                "name": "owner",
+                                "nameLocation": "150:5:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 33,
+                                "src": "135:20:0",
+                                "stateVariable": true,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_address",
+                                    "typeString": "address"
+                                },
+                                "typeName": {
+                                    "id": 4,
+                                    "name": "address",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "135:7:0",
+                                    "stateMutability": "nonpayable",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_address",
+                                        "typeString": "address"
+                                    }
+                                },
+                                "visibility": "public"
+                            },
+                            {
+                                "body": {
+                                    "id": 13,
+                                    "nodeType": "Block",
+                                    "src": "178:37:0",
+                                    "statements": [
+                                        {
+                                            "expression": {
+                                                "id": 11,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "leftHandSide": {
+                                                    "id": 8,
+                                                    "name": "owner",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 5,
+                                                    "src": "189:5:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_address",
+                                                        "typeString": "address"
+                                                    }
+                                                },
+                                                "nodeType": "Assignment",
+                                                "operator": "=",
+                                                "rightHandSide": {
+                                                    "expression": {
+                                                        "id": 9,
+                                                        "name": "msg",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 4294967281,
+                                                        "src": "197:3:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_magic_message",
+                                                            "typeString": "msg"
+                                                        }
+                                                    },
+                                                    "id": 10,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": false,
+                                                    "lValueRequested": false,
+                                                    "memberLocation": "201:6:0",
+                                                    "memberName": "sender",
+                                                    "nodeType": "MemberAccess",
+                                                    "src": "197:10:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_address",
+                                                        "typeString": "address"
+                                                    }
+                                                },
+                                                "src": "189:18:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                }
+                                            },
+                                            "id": 12,
+                                            "nodeType": "ExpressionStatement",
+                                            "src": "189:18:0"
+                                        }
+                                    ]
+                                },
+                                "id": 14,
+                                "implemented": true,
+                                "kind": "constructor",
+                                "modifiers": [],
+                                "name": "",
+                                "nameLocation": "-1:-1:-1",
+                                "nodeType": "FunctionDefinition",
+                                "parameters": {
+                                    "id": 6,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [],
+                                    "src": "175:2:0"
+                                },
+                                "returnParameters": {
+                                    "id": 7,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [],
+                                    "src": "178:0:0"
+                                },
+                                "scope": 33,
+                                "src": "164:51:0",
+                                "stateMutability": "nonpayable",
+                                "virtual": false,
+                                "visibility": "public"
+                            },
+                            {
+                                "body": {
+                                    "id": 23,
+                                    "nodeType": "Block",
+                                    "src": "278:47:0",
+                                    "statements": [
+                                        {
+                                            "expression": {
+                                                "id": 21,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "leftHandSide": {
+                                                    "id": 19,
+                                                    "name": "secretNumber",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 3,
+                                                    "src": "289:12:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    }
+                                                },
+                                                "nodeType": "Assignment",
+                                                "operator": "=",
+                                                "rightHandSide": {
+                                                    "id": 20,
+                                                    "name": "_secretNumber",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 16,
+                                                    "src": "304:13:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    }
+                                                },
+                                                "src": "289:28:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "id": 22,
+                                            "nodeType": "ExpressionStatement",
+                                            "src": "289:28:0"
+                                        }
+                                    ]
+                                },
+                                "functionSelector": "52ee5a55",
+                                "id": 24,
+                                "implemented": true,
+                                "kind": "function",
+                                "modifiers": [],
+                                "name": "setSecretNumber",
+                                "nameLocation": "232:15:0",
+                                "nodeType": "FunctionDefinition",
+                                "parameters": {
+                                    "id": 17,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [
+                                        {
+                                            "constant": false,
+                                            "id": 16,
+                                            "mutability": "mutable",
+                                            "name": "_secretNumber",
+                                            "nameLocation": "256:13:0",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 24,
+                                            "src": "248:21:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            },
+                                            "typeName": {
+                                                "id": 15,
+                                                "name": "uint256",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "248:7:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "src": "247:23:0"
+                                },
+                                "returnParameters": {
+                                    "id": 18,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [],
+                                    "src": "278:0:0"
+                                },
+                                "scope": 33,
+                                "src": "223:102:0",
+                                "stateMutability": "nonpayable",
+                                "virtual": false,
+                                "visibility": "public"
+                            },
+                            {
+                                "body": {
+                                    "id": 31,
+                                    "nodeType": "Block",
+                                    "src": "390:38:0",
+                                    "statements": [
+                                        {
+                                            "expression": {
+                                                "id": 29,
+                                                "name": "secretNumber",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 3,
+                                                "src": "408:12:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "functionReturnParameters": 28,
+                                            "id": 30,
+                                            "nodeType": "Return",
+                                            "src": "401:19:0"
+                                        }
+                                    ]
+                                },
+                                "functionSelector": "84c1d639",
+                                "id": 32,
+                                "implemented": true,
+                                "kind": "function",
+                                "modifiers": [],
+                                "name": "getSecretNumber",
+                                "nameLocation": "342:15:0",
+                                "nodeType": "FunctionDefinition",
+                                "parameters": {
+                                    "id": 25,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [],
+                                    "src": "357:2:0"
+                                },
+                                "returnParameters": {
+                                    "id": 28,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [
+                                        {
+                                            "constant": false,
+                                            "id": 27,
+                                            "mutability": "mutable",
+                                            "name": "",
+                                            "nameLocation": "-1:-1:-1",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 32,
+                                            "src": "381:7:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            },
+                                            "typeName": {
+                                                "id": 26,
+                                                "name": "uint256",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "381:7:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "src": "380:9:0"
+                                },
+                                "scope": 33,
+                                "src": "333:95:0",
+                                "stateMutability": "view",
+                                "virtual": false,
+                                "visibility": "public"
+                            }
+                        ],
+                        "scope": 34,
+                        "src": "60:416:0",
+                        "usedErrors": [],
+                        "usedEvents": []
+                    }
+                ],
+                "src": "33:445:0"
+            },
+            "id": 0
+        }
+    }
+}
